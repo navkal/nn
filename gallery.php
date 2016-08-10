@@ -1,3 +1,8 @@
 <div class="container">
-  <h3>This is a stub</h3>
+  <img src="banner.jpg" class="img-responsive" style="width:100%" alt="Nikhil Navkal">
+  <br/>
+
+  <?php
+    include "bio.php";
+  ?>
 </div>

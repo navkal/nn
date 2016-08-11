@@ -42,7 +42,7 @@
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <p class="padTopWide padBottom" >
-          "How a tiny company like LoftOpera finds such quality voices is beyond me, but I'm not complaining: better just to praise Nikhil Navkal for his silky tenor and pouty bad-boy looks as Gennaro"
+          "How a tiny company like LoftOpera finds such quality voices is beyond me, but I'm not complaining: better just to praise Nikhil Navkal for his silky tenor and pouty bad-boy looks as Gennaro..."
         </p>
       </div>
     </div>

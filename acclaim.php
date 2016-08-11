@@ -1,9 +1,9 @@
 <style>
-@media( min-width: 768px )
+@media( min-width: 992px )
 {
   .padTopWide
   {
-    padding-top: 45px;
+    padding-top: 25px;
   }
 }
 .padBottom
@@ -32,9 +32,13 @@
       </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <p class="padTopWide padBottom" >
-          "The tenor Nikhil Navkal was splendid as Gennaro, conveying the confused ardor of a young man who is driven by passions he can't quite identify. He sang with a vibrant, lean tenor and an unerring sense of line and phrasing."
-        </p>
+        <div class="padTopWide padBottom" >
+          <blockquote>
+            <p>
+              "The tenor Nikhil Navkal was splendid as Gennaro, conveying the confused ardor of a young man who is driven by passions he can't quite identify. He sang with a vibrant, lean tenor and an unerring sense of line and phrasing."
+            </p>
+          </blockquote>
+        </div>
       </div>
     </div>
   </div>
@@ -47,9 +51,13 @@
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <p class="padTopWide padBottom" >
-          "How a tiny company like LoftOpera finds such quality voices is beyond me, but I'm not complaining: better just to praise Nikhil Navkal for his silky tenor and pouty bad-boy looks as Gennaro..."
-        </p>
+        <div class="padTopWide padBottom" >
+          <blockquote>
+            <p>
+              "How a tiny company like LoftOpera finds such quality voices is beyond me, but I'm not complaining: better just to praise Nikhil Navkal for his silky tenor and pouty bad-boy looks as Gennaro..."
+            </p>
+          </blockquote>
+        </div>
       </div>
     </div>
   </div>

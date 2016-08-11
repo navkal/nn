@@ -8,7 +8,7 @@
 }
 .padBottom
 {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .padTop
 {

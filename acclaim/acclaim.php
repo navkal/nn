@@ -20,7 +20,7 @@
   <div class="row">
     <div class="col-xs-11 col-sm-8 col-md-6 col-lg-6">
       <a href="http://www.loftopera.com/" target="_blank" >
-        <img src="Loft.jpg" class="img-responsive" style="width:100%" alt="Loft Opera">
+        <img src="acclaim/Loft.jpg" class="img-responsive" style="width:100%" alt="Loft Opera">
       </a>
     </div>
   </div>
@@ -28,7 +28,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <a href="http://www.nytimes.com/2015/04/07/arts/music/review-loftoperas-lucrezia-borgia-with-flying-bottles-of-beer-and-poison.html?_r=0" target="_blank" >
-        <img src="NYT.jpg" class="img-responsive padBottom" style="width:100%; border:0" alt="New York Times">
+        <img src="acclaim/NYT.jpg" class="img-responsive padBottom" style="width:100%; border:0" alt="New York Times">
       </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -47,7 +47,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <a href="http://observer.com/2015/04/the-met-can-learn-a-beverage-lesson-from-loftopera/" target="_blank" >
-          <img src="Observer.jpg" class="img-responsive padBottom" style="width:100%; border:0" alt="Observer">
+          <img src="acclaim/Observer.jpg" class="img-responsive padBottom" style="width:100%; border:0" alt="Observer">
         </a>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">

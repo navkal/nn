@@ -6,22 +6,22 @@
     padding-bottom:100%;
   }
 
-  .image img.landscape
+  .image img
   {
     position: absolute;
-    max-height: 100%;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
 
+  .image img.landscape
+  {
+    max-height: 100%;
+  }
+
   .image img.portrait
   {
-    position: absolute;
     max-width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
   }
 </style>
 

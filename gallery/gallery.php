@@ -1,4 +1,25 @@
 <style>
+  .thumbnailSmall
+  {
+    display:none;
+  }
+  .thumbnailLarge
+  {
+    display:block;
+  }
+
+	@media( max-width: 767px )
+  {
+    .thumbnailSmall
+    {
+      display:block;
+    }
+    .thumbnailLarge
+    {
+      display:none;
+    }
+  }
+
   .image
   {
     position:relative;
@@ -30,10 +51,13 @@
   {
 ?>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <a href="javascript:void(0)" class="thumbnail" >
+      <a href="javascript:void(0)" class="thumbnail thumbnailLarge" >
         <div class="image" >
           <img src="gallery/images/<?=$jpgname?>.jpg" alt="<?=$jpgname?>.jpg" class="<?=$imgclass?>" >
         </div>
+      </a>
+      <a href="javascript:void(0)" class="thumbnail thumbnailSmall" >
+        <img src="gallery/images/<?=$jpgname?>.jpg" alt="<?=$jpgname?>.jpg" class="<?=$imgclass?>" >
       </a>
     </div>
 <?php

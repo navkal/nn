@@ -47,6 +47,9 @@
 </style>
 
 <?php
+  $dir = "gallery/images/";
+  $imageFilenames = array_slice( scandir( $_SERVER["DOCUMENT_ROOT"] . "/" .  $dir ), 2 );
+
   function showImage( $imagePath )
   {
     list( $width, $height ) = getimagesize( $imagePath );
@@ -69,8 +72,6 @@
 <div class="container">
   <div class="row">
     <?php
-      $dir = "gallery/images/";
-      $imageFilenames = array_slice( scandir( $_SERVER["DOCUMENT_ROOT"] . "/" .  $dir ), 2 );
       foreach ( $imageFilenames as $imageFilename )
       {
         showImage( $dir . $imageFilename );

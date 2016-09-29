@@ -34,7 +34,7 @@
         Opera Australia
       </td>
       <td>
-        2016*
+        2016
       </td>
     </tr>
     <tr>
@@ -571,5 +571,5 @@
   </table>
 
   <br/>
-  <span style="font-style:italic; color:black;">* Upcoming</span>
+  <span style="font-style:italic; color:black; display:none">* Upcoming</span>
 </div>

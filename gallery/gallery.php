@@ -56,7 +56,7 @@
     $imgclass = ( $height > $width ) ? "portrait" : "landscape";
 ?>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <a href="javascript:void(0)" class="thumbnail thumbnailLarge" >
+      <a href="javascript:void(0)" class="thumbnail thumbnailLarge" data-toggle="modal" data-target="#galleryModal" >
         <div class="image" >
           <img src="<?=$imagePath?>" alt="<?=$imagePath?>" class="<?=$imgclass?>" >
         </div>
@@ -79,3 +79,24 @@
     ?>
   </div>
 </div>
+
+
+<!-- Modal dialog to display carousel of photos -->
+<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="galleryLabel">Gallery</h4>
+      </div>
+      <div class="modal-body bg-info">
+TBD
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

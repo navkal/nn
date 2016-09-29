@@ -56,7 +56,7 @@
     $imgclass = ( $height > $width ) ? "portrait" : "landscape";
 ?>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <a href="javascript:void(0)" class="thumbnail thumbnailLarge" data-toggle="modal" data-target="#galleryModal" >
+      <a href="javascript:void(0)" class="thumbnail thumbnailLarge" data-toggle="modal" data-target="#galleryModal" data-imagepath="<?=$imagePath?>" >
         <div class="image" >
           <img src="<?=$imagePath?>" alt="<?=$imagePath?>" class="<?=$imgclass?>" >
         </div>
@@ -98,5 +98,30 @@ TBD
     </div>
   </div>
 </div>
+
+
+<script>
+
+$( "#galleryModal" ).on( "show.bs.modal", showModal );
+
+function showModal( event )
+{
+  // Get image that was clicked
+  var thumbnail = $( event.relatedTarget )
+
+  // Get image path from data-* attribute
+  var imagePath = thumbnail.data( "imagepath" );
+
+  // Update the modal content
+  $( this ).find( ".modal-body" )
+    .html( "" )
+    .append(
+      '<a href="javascript:void(0)" class="thumbnail" >' +
+        '<img src="' + imagePath + '" alt="' + imagePath + '" class="moo" >' +
+      '</a>'
+    );
+}
+
+</script>
 
 

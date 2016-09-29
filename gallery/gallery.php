@@ -90,7 +90,6 @@
         <h4 class="modal-title" id="galleryLabel">Gallery</h4>
       </div>
       <div class="modal-body bg-info">
-TBD
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

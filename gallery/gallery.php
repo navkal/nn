@@ -47,17 +47,19 @@
 </style>
 
 <?php
-  function showImage( $jpgname, $imgclass="landscape" )
+  function showImage( $imagePath )
   {
+    list( $width, $height ) = getimagesize( $imagePath );
+    $imgclass = ( $height > $width ) ? "portrait" : "landscape";
 ?>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
       <a href="javascript:void(0)" class="thumbnail thumbnailLarge" >
         <div class="image" >
-          <img src="gallery/images/<?=$jpgname?>.jpg" alt="<?=$jpgname?>.jpg" class="<?=$imgclass?>" >
+          <img src="<?=$imagePath?>" alt="<?=$imagePath?>" class="<?=$imgclass?>" >
         </div>
       </a>
       <a href="javascript:void(0)" class="thumbnail thumbnailSmall" >
-        <img src="gallery/images/<?=$jpgname?>.jpg" alt="<?=$jpgname?>.jpg" class="<?=$imgclass?>" >
+        <img src="<?=$imagePath?>" alt="<?=$imagePath?>" class="<?=$imgclass?>" >
       </a>
     </div>
 <?php
@@ -67,15 +69,12 @@
 <div class="container">
   <div class="row">
     <?php
-      showImage( "9213677_orig" );
-      showImage( "2288495_orig" );
-      showImage( "1676474_orig" );
-      showImage( "4869746_orig" );
-      showImage( "970890_orig" );
-      showImage( "4217558_orig" );
-      showImage( "2320357_orig", "portrait" );
-      showImage( "5294250_orig" );
-      showImage( "7196577_orig", "portrait" );
+      $dir = "gallery/images/";
+      $imageFilenames = array_slice( scandir( $_SERVER["DOCUMENT_ROOT"] . "/" .  $dir ), 2 );
+      foreach ( $imageFilenames as $imageFilename )
+      {
+        showImage( $dir . $imageFilename );
+      }
     ?>
   </div>
 </div>

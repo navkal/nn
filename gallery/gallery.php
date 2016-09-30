@@ -56,12 +56,12 @@
     $imgclass = ( $height > $width ) ? "portrait" : "landscape";
 ?>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <a href="javascript:void(0)" class="thumbnail thumbnailLarge" data-toggle="modal" data-target="#galleryModal" data-imagepath="<?=$imagePath?>" >
+      <a href="" class="thumbnail thumbnailLarge" data-toggle="modal" data-target="#galleryModal" data-imagepath="<?=$imagePath?>" >
         <div class="image" >
           <img src="<?=$imagePath?>" alt="<?=$imagePath?>" class="<?=$imgclass?>" >
         </div>
       </a>
-      <a href="javascript:void(0)" class="thumbnail thumbnailSmall" >
+      <a href="" class="thumbnail thumbnailSmall" >
         <img src="<?=$imagePath?>" alt="<?=$imagePath?>" class="<?=$imgclass?>" >
       </a>
     </div>
@@ -83,13 +83,16 @@
 
 <!-- Modal dialog to display carousel of photos -->
 <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryLabel">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog" style="width:90%" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="galleryLabel"><img alt="Nikhil Navkal" src="brand.ico" style="height:25px"></h4>
       </div>
       <div class="modal-body">
+        <?php
+          //include "carousel.php";
+        ?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -98,13 +101,13 @@
   </div>
 </div>
 
-
 <script>
 
   $( "#galleryModal" ).on( "show.bs.modal", showModal );
 
   function showModal( event )
   {
+    //return;
     // Get image that was clicked
     var thumbnail = $( event.relatedTarget )
 

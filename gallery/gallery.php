@@ -101,25 +101,25 @@
 
 <script>
 
-$( "#galleryModal" ).on( "show.bs.modal", showModal );
+  $( "#galleryModal" ).on( "show.bs.modal", showModal );
 
-function showModal( event )
-{
-  // Get image that was clicked
-  var thumbnail = $( event.relatedTarget )
+  function showModal( event )
+  {
+    // Get image that was clicked
+    var thumbnail = $( event.relatedTarget )
 
-  // Get image path from data-* attribute
-  var imagePath = thumbnail.data( "imagepath" );
+    // Get image path from data-* attribute
+    var imagePath = thumbnail.data( "imagepath" );
 
-  // Update the modal content
-  $( this ).find( ".modal-body" )
-    .html( "" )
-    .append(
-      '<a href="javascript:void(0)" class="thumbnail" >' +
-        '<img src="' + imagePath + '" alt="' + imagePath + '" class="moo" >' +
-      '</a>'
-    );
-}
+    // Update the modal content
+    $( this ).find( ".modal-body" )
+      .html( "" )
+      .append(
+        '<a href="javascript:void(0)" class="thumbnail" >' +
+          '<img src="' + imagePath + '" alt="' + imagePath + '" class="moo" >' +
+        '</a>'
+      );
+  }
 
 </script>
 

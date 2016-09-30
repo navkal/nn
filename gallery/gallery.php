@@ -140,7 +140,7 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <div id='galleryCarousel' class='carousel slide' data-ride='carousel'>
+          <div id='galleryCarousel' class='carousel slide' data-ride='carousel' data-interval=false >
 
             <div class='carousel-outer'>
 
@@ -197,7 +197,7 @@
     // Generate carousel indicator content
     $( this ).find( ".carousel-indicators" )
       .html( "" )
-      .append( makeCarouselIndicators( sources, activeIndex ) );
+      .append( makeCarouselIndicators( sources, activeIndex ) );      
   }
 
   function makeCarouselInner( sources, activeIndex )
@@ -207,7 +207,7 @@
     for ( var i = 0; i < sources.length; i++ )
     {
       sContent += '<div class="item ' + ( i == activeIndex ? "active" : "" ) + ' ">';
-      sContent += '<img src="' + sources[i] + '" alt="" style="margin:auto" />';
+      sContent += '<img src="' + sources[i] + '" alt="" class="center-block" />';
       sContent += '</div>';
     }
 

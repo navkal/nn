@@ -104,21 +104,16 @@
 
   function showModal( event )
   {
-    //return;
-    // Get image that was clicked
-    var thumbnail = $( event.relatedTarget )
-
-    // Get image path from data-* attribute
-    var imagePath = thumbnail.data( "imagepath" );
-
-    // Update the modal content
+    // Update modal dialog content
     $( this ).find( ".modal-body" )
       .html( "" )
-      .append( makeCarousel( imagePath) );
+      .append( makeCarousel( $( event.relatedTarget ) ) );
   }
 
-  function makeCarousel( imagePath )
+  function makeCarousel( thumbnail )
   {
+    var imagePath = thumbnail.data( "imagepath" );
+
     var sCarousel =
       '<a href="javascript:void(0)" class="thumbnail" >' +
         '<img src="' + imagePath + '" alt="' + imagePath + '" class="moo" >' +

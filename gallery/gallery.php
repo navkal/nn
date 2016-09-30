@@ -52,6 +52,11 @@
     width: 100%;
   }
 
+  #galleryCarousel .carousel-inner img
+  {
+    margin: auto;
+  }
+
   #galleryCarousel .carousel-indicators
   {
     margin: 10px 0 0;
@@ -200,7 +205,7 @@
     // Generate carousel indicator content
     $( this ).find( ".carousel-indicators" )
       .html( "" )
-      .append( makeCarouselIndicators( sources, activeIndex ) );      
+      .append( makeCarouselIndicators( sources, activeIndex ) );
   }
 
   function makeCarouselInner( sources, activeIndex )
@@ -210,7 +215,7 @@
     for ( var i = 0; i < sources.length; i++ )
     {
       sContent += '<div class="item ' + ( i == activeIndex ? "active" : "" ) + ' ">';
-      sContent += '<img src="' + sources[i] + '" alt="" class="center-block" />';
+      sContent += '<img src="' + sources[i] + '" alt="" />';
       sContent += '</div>';
     }
 

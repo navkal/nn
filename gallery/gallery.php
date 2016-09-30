@@ -90,9 +90,6 @@
         <h4 class="modal-title" id="galleryLabel"><img alt="Nikhil Navkal" src="brand.ico" style="height:25px"></h4>
       </div>
       <div class="modal-body">
-        <?php
-          //include "carousel.php";
-        ?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -117,11 +114,17 @@
     // Update the modal content
     $( this ).find( ".modal-body" )
       .html( "" )
-      .append(
-        '<a href="javascript:void(0)" class="thumbnail" >' +
-          '<img src="' + imagePath + '" alt="' + imagePath + '" class="moo" >' +
-        '</a>'
-      );
+      .append( makeCarousel( imagePath) );
+  }
+
+  function makeCarousel( imagePath )
+  {
+    var sCarousel =
+      '<a href="javascript:void(0)" class="thumbnail" >' +
+        '<img src="' + imagePath + '" alt="' + imagePath + '" class="moo" >' +
+      '</a>'
+
+    return sCarousel;
   }
 
 </script>

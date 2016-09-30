@@ -77,6 +77,7 @@
   {
     display: block;
     opacity: 0.5;
+    height: 100px;
   }
 
   #galleryCarousel .carousel-indicators li.active img
@@ -223,7 +224,7 @@
     for ( var i = 0; i < sources.length; i++ )
     {
       sContent += '<li data-target="#galleryCarousel" data-slide-to="' + i + '" class="' + ( i == activeIndex ? "active" : "" ) + '">';
-      sContent += '<img src="' + sources[i] + '" alt="" style="height:100px" />';
+      sContent += '<img src="' + sources[i] + '" alt="" />';
       sContent += '</li>';
     }
 

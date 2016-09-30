@@ -49,7 +49,7 @@
   #galleryCarousel
   {
     margin: 20px auto;
-    width: 75%;
+    width: 100%;
   }
 
   #galleryCarousel .carousel-indicators

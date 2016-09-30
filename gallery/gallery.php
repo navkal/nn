@@ -132,14 +132,15 @@
 
 <!-- Modal dialog to display carousel of photos -->
 <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryLabel">
-  <div class="modal-dialog" style="width:90%" role="document">
+<div class="container">
+  <div class="modal-dialog" style="width:100%" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="galleryLabel"><img alt="Nikhil Navkal" src="brand.ico" style="height:25px"></h4>
       </div>
       <div class="modal-body">
-        <div class="container">
+        <div class="container-fluid">
           <div id='galleryCarousel' class='carousel slide' data-ride='carousel' data-interval=false >
 
             <div class='carousel-outer'>
@@ -170,6 +171,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <script>

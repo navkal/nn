@@ -132,46 +132,46 @@
 
 <!-- Modal dialog to display carousel of photos -->
 <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryLabel">
-<div class="container">
-  <div class="modal-dialog" style="width:100%" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="galleryLabel"><img alt="Nikhil Navkal" src="brand.ico" style="height:25px"></h4>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div id='galleryCarousel' class='carousel slide' data-ride='carousel' data-interval=false >
+  <div class="container">
+    <div class="modal-dialog" style="width:100%" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="galleryLabel"><img alt="Nikhil Navkal" src="brand.ico" style="height:25px"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div id='galleryCarousel' class='carousel slide' data-ride='carousel' data-interval=false >
 
-            <div class='carousel-outer'>
+              <div class='carousel-outer'>
 
-              <!-- Images -->
-              <div class='carousel-inner'>
+                <!-- Images -->
+                <div class='carousel-inner'>
+                </div>
+
+                <!-- Controls -->
+                <a class='left carousel-control' href='#galleryCarousel' data-slide='prev'>
+                  <span class='glyphicon glyphicon-chevron-left'></span>
+                </a>
+                <a class='right carousel-control' href='#galleryCarousel' data-slide='next'>
+                  <span class='glyphicon glyphicon-chevron-right'></span>
+                </a>
+
               </div>
 
-              <!-- Controls -->
-              <a class='left carousel-control' href='#galleryCarousel' data-slide='prev'>
-                <span class='glyphicon glyphicon-chevron-left'></span>
-              </a>
-              <a class='right carousel-control' href='#galleryCarousel' data-slide='next'>
-                <span class='glyphicon glyphicon-chevron-right'></span>
-              </a>
+              <!-- Indicators -->
+              <ol class='carousel-indicators'>
+              </ol>
 
             </div>
-
-            <!-- Indicators -->
-            <ol class='carousel-indicators'>
-            </ol>
-
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <script>

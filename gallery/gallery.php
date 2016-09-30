@@ -223,7 +223,7 @@
     for ( var i = 0; i < sources.length; i++ )
     {
       sContent += '<li data-target="#galleryCarousel" data-slide-to="' + i + '" class="' + ( i == activeIndex ? "active" : "" ) + '">';
-      sContent += '<img src="' + sources[i] + '" alt="" style="height:50px" />';
+      sContent += '<img src="' + sources[i] + '" alt="" style="height:100px" />';
       sContent += '</li>';
     }
 

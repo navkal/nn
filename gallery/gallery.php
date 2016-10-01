@@ -188,10 +188,15 @@
   {
     // Get list of image source files
     var images = $( ".thumbnailLarge img" );
-    var sources = [];
+    var attrs = [];
     for ( var i = 0; i < images.length; i++ )
     {
-      sources.push( $( images[i] ).attr( "src" ) );
+      attrs.push(
+        {
+          source: $( images[i] ).attr( "src" ),
+          portrait: $( images[i] ).hasClass( "portrait" )
+        }
+      );
     }
 
     // Determine index of image that was clicked
@@ -200,36 +205,36 @@
     // Generate carousel view content
     $( this ).find( ".carousel-inner" )
       .html( "" )
-      .append( makeCarouselInner( sources, activeIndex ) );
+      .append( makeCarouselInner( attrs, activeIndex ) );
 
     // Generate carousel indicator content
     $( this ).find( ".carousel-indicators" )
       .html( "" )
-      .append( makeCarouselIndicators( sources, activeIndex ) );
+      .append( makeCarouselIndicators( attrs, activeIndex ) );
   }
 
-  function makeCarouselInner( sources, activeIndex )
+  function makeCarouselInner( attrs, activeIndex )
   {
     var sContent = "";
 
-    for ( var i = 0; i < sources.length; i++ )
+    for ( var i = 0; i < attrs.length; i++ )
     {
       sContent += '<div class="item ' + ( i == activeIndex ? "active" : "" ) + ' ">';
-      sContent += '<img src="' + sources[i] + '" alt="" />';
+      sContent += '<img src="' + attrs[i].source + '" alt="" style="' + ( attrs[i].portrait ? "" : "" ) + '" />';
       sContent += '</div>';
     }
 
     return sContent;
   }
 
-  function makeCarouselIndicators( sources, activeIndex )
+  function makeCarouselIndicators( attrs, activeIndex )
   {
     var sContent = "";
 
-    for ( var i = 0; i < sources.length; i++ )
+    for ( var i = 0; i < attrs.length; i++ )
     {
       sContent += '<li data-target="#galleryCarousel" data-slide-to="' + i + '" class="' + ( i == activeIndex ? "active" : "" ) + '">';
-      sContent += '<img src="' + sources[i] + '" alt="" />';
+      sContent += '<img src="' + attrs[i].source + '" alt="" />';
       sContent += '</li>';
     }
 

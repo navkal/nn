@@ -1,17 +1,17 @@
 <?php
   require_once $_SERVER["DOCUMENT_ROOT"]."/../common/util.php";
   error_log( "====> post=" . print_r( $_POST, true ) );
-  
+
   if ( count( $_POST ) > 0 )
   {
-    $to = "naominavkal@gmail.com";
-    $subject = "Contact";
+    $to = "NaomiNavkal@gmail.com";
+    $subject = "Website contact message";
     $text =  $_POST["firstName"];
-    $headers = "From: foo@moo.goo" . "\r\n";
+    $email = "your@big.fan";
+    $headers = "From: " . $email . "<NaomiNavkal@gmail.com>" . "\r\n";
     mail( $to, $subject, $text, $headers );
   }
 ?>
-
 
 
 <div class="container">
@@ -21,9 +21,9 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
-        
+
         <input type="text" name="firstName" required />
-        
+
         <!-- Form buttons -->
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

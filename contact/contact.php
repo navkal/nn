@@ -2,7 +2,11 @@
   require_once $_SERVER["DOCUMENT_ROOT"]."/../common/util.php";
   error_log( "====> post=" . print_r( $_POST, true ) );
 
-  if ( count( $_POST ) > 0 )
+  if ( count( $_POST ) == 0 )
+  {
+    showControls();
+  }
+  else
   {
     $to = "NaomiNavkal@gmail.com";
     $subject = "Website contact message";
@@ -10,34 +14,59 @@
     $email = "your@big.fan";
     $headers = "From: " . $email . "<NaomiNavkal@gmail.com>" . "\r\n";
     mail( $to, $subject, $text, $headers );
+    sayThankYou();
   }
 ?>
 
 
-<div class="container">
-  <div class="page-header">
-    <p class="h3">Contact Nikhil</p>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
+<?php
+  function showControls()
+  {
+?>
+    <div class="container">
+      <div class="page-header">
+        <p class="h3">Contact Nikhil</p>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
 
-        <input type="text" name="firstName" required />
+            <input type="text" name="firstName" required />
 
-        <!-- Form buttons -->
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div style="text-align:center;" >
-              <button id="submitButton" type="submit" form="contactForm" class="btn btn-primary" >Submit</button>
-              <button id="cancelButton" type="reset" onclick="window.location.assign( window.location.href );" class="btn btn-default" >Clear</button>
+            <!-- Form buttons -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div style="text-align:center;" >
+                  <button id="submitButton" type="submit" form="contactForm" class="btn btn-primary" >Submit</button>
+                  <button id="cancelButton" type="reset" onclick="window.location.assign( window.location.href );" class="btn btn-default" >Clear</button>
+                </div>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
-  </div>
+<?php
+  }
+?>
 
-</div>
+<?php
+  function sayThankYou()
+  {
+?>
+    <div class="container">
+      <div class="page-header">
+        <p class="h3">Contact Nikhil</p>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h3>Thank you!</h3>
+        </div>
+      </div>
+    </div>
+<?php
+  }
+?>
 
 <script>
   function onSubmitContact()

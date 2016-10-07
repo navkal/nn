@@ -103,6 +103,9 @@
 <script>
   function onSubmitContact()
   {
+    $( ".form-control" ).prop( "readonly", true );
+    $( "#submitButton" ).prop( "disabled", true );
+    $( "#cancelButton" ).prop( "disabled", true );
     return true;
   }
 </script>

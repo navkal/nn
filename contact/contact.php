@@ -45,9 +45,15 @@
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: " . $_POST["email"] . "<NaomiNavkal@gmail.com>" . "\r\n";
 
-    mail( $to, $subject, $text, $headers );
+    if ( mail( $to, $subject, $text, $headers ) )
+    {
+      sayThankYou();
+    }
+    else
+    {
+      saySorry();
+    }
 
-    sayThankYou();
   }
 ?>
 
@@ -108,6 +114,20 @@
         <p class="h3">Contact Nikhil</p>
       </div>
       <p class="h3">Thank you!</p>
+    </div>
+<?php
+  }
+?>
+
+<?php
+  function saySorry()
+  {
+?>
+    <div class="container">
+      <div class="page-header">
+        <p class="h3">Contact Nikhil</p>
+      </div>
+      <p class="h3">An error occurred while transmitting your message.</p>
     </div>
 <?php
   }

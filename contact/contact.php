@@ -2,7 +2,7 @@
   body
   {
     background-image: url( "contact/clef.jpg" );
-    background-position: right bottom;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

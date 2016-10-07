@@ -19,6 +19,7 @@
       "Comment: " . PHP_EOL . $_POST["comment"] . PHP_EOL . PHP_EOL;
 
     $text =
+      "<style>body{font-family: arial;}</style>" .
       "<html><body>".
       "<h3>Name</h3><p>" . $name . "</p>" .
       "<h3>Email</h3><p>" . $_POST["email"] . "</p>" .
@@ -26,9 +27,9 @@
       "</html></body>";
 
 
-$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-$headers .= "From: " . $_POST["email"] . "<NaomiNavkal@gmail.com>" . "\r\n";
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= "From: " . $_POST["email"] . "<NaomiNavkal@gmail.com>" . "\r\n";
 
     mail( $to, $subject, $text, $headers );
 

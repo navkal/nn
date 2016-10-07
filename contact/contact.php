@@ -86,7 +86,7 @@
 
             <div class="form-group">
               <label for="comment">Comment</label>
-              <textarea class="form-control" id="comment" name="comment" rows="3" required ></textarea>
+              <textarea class="form-control" id="comment" name="comment" rows="5" maxlength="1000" required ></textarea>
             </div>
 
             <!-- Form buttons -->

@@ -93,14 +93,11 @@
       </div>
 
       <!-- Form buttons -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div style="text-align:center;" >
-            <button id="submitButton" type="submit" form="contactForm" class="btn btn-primary" >Submit</button>
-            <button id="cancelButton" type="reset" onclick="window.location.assign( window.location.href );" class="btn btn-default" >Clear</button>
-          </div>
-        </div>
+      <div style="text-align:center;" >
+        <button id="submitButton" type="submit" form="contactForm" class="btn btn-default" >Submit</button>
+        <button id="cancelButton" type="reset" onclick="window.location.assign( window.location.href );" class="btn btn-default" >Clear</button>
       </div>
+
     </form>
 <?php
   }

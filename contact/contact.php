@@ -7,15 +7,22 @@
     background-attachment: fixed;
     background-size: cover;
   }
+
   label, p.h3, .form-control
   {
     color: white;
   }
+
   .form-control
   {
     background-color: transparent;
   }
 </style>
+
+<div class="container">
+  <div class="page-header">
+    <p class="h3">Contact Nikhil</p>
+  </div>
 
 <?php
   require_once $_SERVER["DOCUMENT_ROOT"]."/../common/util.php";
@@ -56,51 +63,45 @@
 
   }
 ?>
+</div>
 
 
 <?php
   function showControls()
   {
 ?>
-    <div class="container">
-      <div class="page-header">
-        <p class="h3">Contact Nikhil</p>
+    <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
+
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" required >
       </div>
 
-          <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" required >
+      </div>
 
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" name="firstName" required >
-            </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" required >
+      </div>
 
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" name="lastName" required >
-            </div>
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea class="form-control" id="comment" name="comment" rows="5" maxlength="1000" required ></textarea>
+      </div>
 
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" class="form-control" id="email" name="email" required >
-            </div>
-
-            <div class="form-group">
-              <label for="comment">Comment</label>
-              <textarea class="form-control" id="comment" name="comment" rows="5" maxlength="1000" required ></textarea>
-            </div>
-
-            <!-- Form buttons -->
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div style="text-align:center;" >
-                  <button id="submitButton" type="submit" form="contactForm" class="btn btn-primary" >Submit</button>
-                  <button id="cancelButton" type="reset" onclick="window.location.assign( window.location.href );" class="btn btn-default" >Clear</button>
-                </div>
-              </div>
-            </div>
-          </form>
-
-    </div>
+      <!-- Form buttons -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div style="text-align:center;" >
+            <button id="submitButton" type="submit" form="contactForm" class="btn btn-primary" >Submit</button>
+            <button id="cancelButton" type="reset" onclick="window.location.assign( window.location.href );" class="btn btn-default" >Clear</button>
+          </div>
+        </div>
+      </div>
+    </form>
 <?php
   }
 ?>
@@ -109,12 +110,8 @@
   function sayThankYou()
   {
 ?>
-    <div class="container">
-      <div class="page-header">
-        <p class="h3">Contact Nikhil</p>
-      </div>
-      <p class="h3">Thank you!</p>
-    </div>
+    <p class="h3">Thank you for your interest. I will be in touch!</p>
+    <p class="h3">- Nikhil</p>
 <?php
   }
 ?>
@@ -123,16 +120,12 @@
   function saySorry()
   {
 ?>
-    <div class="container">
-      <div class="page-header">
-        <p class="h3">Contact Nikhil</p>
-      </div>
-      <p class="h3">An error occurred while transmitting your message.</p>
-      <p class="h3">Please try again later.</p>
-    </div>
+    <p class="h3">An error occurred while transmitting your message.</p>
+    <p class="h3">Please try again later.</p>
 <?php
   }
 ?>
+
 
 <script>
   function onSubmitContact()

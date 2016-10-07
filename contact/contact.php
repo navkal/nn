@@ -11,19 +11,14 @@
     $to = "NaomiNavkal@gmail.com";
 
     $name = $_POST["firstName"] . " " . $_POST["lastName"];
-    $subject = "Comment by " . $name;
-
-    $text =
-      "Name: " . $name . PHP_EOL . PHP_EOL .
-      "Email: " . $_POST["email"] . PHP_EOL . PHP_EOL .
-      "Comment: " . PHP_EOL . $_POST["comment"] . PHP_EOL . PHP_EOL;
+    $subject = "From " . $name;
 
     $text =
       "<style>body{font-family: arial;}</style>" .
       "<html><body>".
-      "<h3>Name</h3><p>" . $name . "</p>" .
-      "<h3>Email</h3><p>" . $_POST["email"] . "</p>" .
-      "<h3>Comment</h3><p>" . $_POST["comment"] . "</p>" .
+      "<h4>Name</h4><span>" . $name . "</span>" .
+      "<h4>Email</h4><p>" . $_POST["email"] . "</p>" .
+      "<h4>Comment</h4><p>" . $_POST["comment"] . "</p>" .
       "</html></body>";
 
 

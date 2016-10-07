@@ -18,7 +18,17 @@
       "Email: " . $_POST["email"] . PHP_EOL . PHP_EOL .
       "Comment: " . PHP_EOL . $_POST["comment"] . PHP_EOL . PHP_EOL;
 
-    $headers = "From: " . $_POST["email"] . "<NaomiNavkal@gmail.com>" . "\r\n";
+    $text =
+      "<html><body>".
+      "<h3>Name</h3><p>" . $name . "</p>" .
+      "<h3>Email</h3><p>" . $_POST["email"] . "</p>" .
+      "<h3>Comment</h3><p>" . $_POST["comment"] . "</p>" .
+      "</html></body>";
+
+
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+$headers .= "From: " . $_POST["email"] . "<NaomiNavkal@gmail.com>" . "\r\n";
 
     mail( $to, $subject, $text, $headers );
 
@@ -41,23 +51,22 @@
 
             <div class="form-group">
               <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required >
             </div>
 
             <div class="form-group">
               <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required >
             </div>
-
 
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required >
             </div>
 
             <div class="form-group">
               <label for="comment">Comment</label>
-              <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+              <textarea class="form-control" id="comment" name="comment" rows="3" required ></textarea>
             </div>
 
             <!-- Form buttons -->

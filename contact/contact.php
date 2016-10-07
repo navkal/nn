@@ -1,3 +1,22 @@
+<style>
+  body
+  {
+    background-image: url( "contact/clef.jpg" );
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  label, p.h3, .form-control
+  {
+    color: white;
+  }
+  .form-control
+  {
+    background-color: transparent;
+  }
+</style>
+
 <?php
   require_once $_SERVER["DOCUMENT_ROOT"]."/../common/util.php";
   error_log( "====> post=" . print_r( $_POST, true ) );
@@ -41,23 +60,22 @@
       <div class="page-header">
         <p class="h3">Contact Nikhil</p>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-body">
+
           <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
 
             <div class="form-group">
               <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required >
+              <input type="text" class="form-control" id="firstName" name="firstName" required >
             </div>
 
             <div class="form-group">
               <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required >
+              <input type="text" class="form-control" id="lastName" name="lastName" required >
             </div>
 
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required >
+              <input type="email" class="form-control" id="email" name="email" required >
             </div>
 
             <div class="form-group">
@@ -75,8 +93,7 @@
               </div>
             </div>
           </form>
-        </div>
-      </div>
+
     </div>
 <?php
   }
@@ -90,11 +107,7 @@
       <div class="page-header">
         <p class="h3">Contact Nikhil</p>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>Thank you!</h3>
-        </div>
-      </div>
+      <p class="h3">Thank you!</p>
     </div>
 <?php
   }

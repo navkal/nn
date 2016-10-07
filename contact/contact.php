@@ -40,11 +40,6 @@
           <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
 
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
-            </div>
-
-            <div class="form-group">
               <label for="firstName">First Name</label>
               <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
             </div>
@@ -52,6 +47,12 @@
             <div class="form-group">
               <label for="lastName">Last Name</label>
               <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+            </div>
+
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
             </div>
 
             <div class="form-group">

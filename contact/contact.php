@@ -20,11 +20,8 @@
 </style>
 
 <div class="container">
-  <div class="page-header">
-    <p class="h3">Contact Nikhil</p>
-  </div>
 
-  <div style="padding-top: 5px; padding-bottom: 30px;" >
+  <div style="padding-bottom: 30px;" >
     <p class="h3">Management</p>
     <a href="http://zemskygreenartists.com/contact-us-2/" target="_blank" >
       <img src="contact/zg.png" alt="Zemsky Green Artists Management">
@@ -79,7 +76,7 @@
   {
 ?>
     <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
-      <p class="h3">Send Nikhil a message...</p>
+      <p class="h3">Contact Nikhil...</p>
 
       <div class="form-group">
         <label for="firstName">First Name</label>

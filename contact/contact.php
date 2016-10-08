@@ -24,6 +24,13 @@
     <p class="h3">Contact Nikhil</p>
   </div>
 
+  <div style="padding-top: 5px; padding-bottom: 30px;" >
+    <p class="h3">Management</p>
+    <a href="http://zemskygreenartists.com/contact-us-2/" target="_blank" >
+      <img src="contact/zg.png" alt="Zemsky Green Artists Management">
+    </a>
+  </div>
+
 <?php
   require_once $_SERVER["DOCUMENT_ROOT"]."/../common/util.php";
   error_log( "====> post=" . print_r( $_POST, true ) );
@@ -63,6 +70,7 @@
 
   }
 ?>
+
 </div>
 
 
@@ -71,6 +79,7 @@
   {
 ?>
     <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
+      <p class="h3">Send Nikhil a message...</p>
 
       <div class="form-group">
         <label for="firstName">First Name</label>

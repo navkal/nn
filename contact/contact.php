@@ -113,6 +113,7 @@
   function sayThankYou()
   {
 ?>
+    <br/>
     <p class="h3">Thank you for your interest. I will be in touch!</p>
     <p class="h3">- Nikhil</p>
 <?php
@@ -123,6 +124,7 @@
   function saySorry()
   {
 ?>
+    <br/>
     <p class="h3">An error occurred while transmitting your message.</p>
     <p class="h3">Please try again later.</p>
 <?php

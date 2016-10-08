@@ -8,7 +8,7 @@
     background-size: cover;
   }
 
-  label, p.h3, .form-control
+  label, p.h3, p.h2, .form-control
   {
     color: white;
   }
@@ -76,7 +76,7 @@
   {
 ?>
     <form id="contactForm" role="form" onsubmit="return onSubmitContact();" method="post" enctype="multipart/form-data" >
-      <p class="h3">Contact Nikhil...</p>
+      <p class="h2"><b>Contact Nikhil</b></p>
 
       <div class="form-group">
         <label for="firstName">First Name</label>

@@ -105,7 +105,7 @@
       <!-- Form buttons -->
       <div style="text-align:center;" >
         <button id="submitButton" type="submit" form="contactForm" class="btn btn-default" >Submit</button>
-        <button id="cancelButton" type="reset" onclick="window.location.assign( window.location.href );" class="btn btn-default" >Clear</button>
+        <button id="cancelButton" type="reset" onclick="$( "input, textarea").val('');" class="btn btn-default" >Clear</button>
       </div>
 
     </form>

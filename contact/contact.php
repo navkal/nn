@@ -42,13 +42,17 @@
 
     $name = $_POST["firstName"] . " " . $_POST["lastName"];
     $subject = "From " . $name;
+    $comment = str_replace( "\n", "<br/>", $_POST["comment"] );
 
     $text =
       "<style>body{font-family: arial;}</style>" .
       "<html><body>".
-      "<h4>Name</h4><span>" . $name . "</span>" .
-      "<h4>Email</h4><p>" . $_POST["email"] . "</p>" .
-      "<h4>Comment</h4><p>" . $_POST["comment"] . "</p>" .
+      "<h4><u>Name</u></h4><span>" . $name . "</span>" .
+      "<hr/>" .
+      "<h4><u>Email</u></h4><p>" . $_POST["email"] . "</p>" .
+      "<hr/>" .
+      "<h4><u>Comment</u></h4><p>" . $comment . "</p>" .
+      "<hr/>" .
       "</html></body>";
 
 

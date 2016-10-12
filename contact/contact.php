@@ -22,7 +22,7 @@
 <div class="container">
 
   <div style="padding-bottom: 30px;" >
-    <p class="h3">Management</p>
+    <p class="h2"><b>Management</b></p>
     <a href="http://zemskygreenartists.com/contact-us-2/" target="_blank" >
       <img src="contact/zg.png" alt="Zemsky Green Artists Management">
     </a>

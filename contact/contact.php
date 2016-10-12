@@ -38,7 +38,7 @@
   }
   else
   {
-    $to = "NaomiNavkal@gmail.com";
+    $to = "NikhilNavkalContact@gmail.com";
 
     $name = $_POST["firstName"] . " " . $_POST["lastName"];
     $subject = "From " . $name;
@@ -54,7 +54,7 @@
 
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: " . $_POST["email"] . "<NaomiNavkal@gmail.com>" . "\r\n";
+    $headers .= "From: " . $_POST["email"] . "<NikhilNavkalContact@gmail.com>" . "\r\n";
 
     if ( mail( $to, $subject, $text, $headers ) )
     {

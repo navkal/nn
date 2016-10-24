@@ -10,18 +10,8 @@
   </div>
 
   <?php
-    require_once $_SERVER["DOCUMENT_ROOT"]."/../common/util.php";
     require_once $_SERVER["DOCUMENT_ROOT"]."/../common/contact.php";
-    error_log( "====> post=" . print_r( $_POST, true ) );
-
-    if ( count( $_POST ) == 0 )
-    {
-      showContactForm( "h2", "Nikhil Navkal" );
-    }
-    else
-    {
-      sendContactMessage( "NikhilNavkalContact@gmail.com", "I", "Nikhil" );
-    }
+    contact( "h2", "Nikhil Navkal",  "NikhilNavkalContact@gmail.com", "I", "Nikhil" );
   ?>
 
 </div>

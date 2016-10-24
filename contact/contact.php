@@ -64,30 +64,16 @@
 
     if ( mail( $to, $subject, $text, $headers ) )
     {
-      sayThankYou();
+      reportContactSuccess( "I", "Nikhil" );
     }
     else
     {
       reportContactError();
     }
-
   }
 ?>
 
 </div>
-
-
-<?php
-  function sayThankYou()
-  {
-?>
-    <br/>
-    <p class="h3">Thank you for your interest. I will be in touch!</p>
-    <p class="h3">- Nikhil</p>
-<?php
-  }
-?>
-
 
 <script>
   function onSubmitContact()

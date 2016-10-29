@@ -11,7 +11,8 @@
 
   <?php
     require_once $_SERVER["DOCUMENT_ROOT"]."/../common/contact.php";
-    contact( "h2", "Nikhil&nbsp;Navkal",  "NikhilNavkalContact@gmail.com", "I", "Nikhil", "white", "seagreen", "contact/clef.jpg" );
+    $zemskygreen = "#607765";
+    contact( "h2", "Nikhil&nbsp;Navkal",  "NikhilNavkalContact@gmail.com", "I", "Nikhil", "white", $zemskygreen, "contact/clef.jpg" );
   ?>
 
 </div>

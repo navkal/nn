@@ -11,7 +11,7 @@
 
   <?php
     require_once $_SERVER["DOCUMENT_ROOT"]."/../common/contact.php";
-    contact( "h2", "Nikhil Navkal",  "NikhilNavkalContact@gmail.com", "I", "Nikhil" );
+    contact( "h2", "Nikhil&nbsp;Navkal",  "NikhilNavkalContact@gmail.com", "I", "Nikhil" );
   ?>
 
 </div>

@@ -222,18 +222,15 @@
   {
     var strip = $( "#carousel-strip" );
     var activeIndex = strip.find( ".active" ).index();
-
     var stripItems = strip.find( "li" );
-
-    
     var offset = 0;
+
     for ( var index = 0; index < activeIndex; index ++ )
     {
       offset += $( stripItems[index] ).width();
     }
 
     strip.scrollLeft( offset );
-
   }
 
   // Generate carousel

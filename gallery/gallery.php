@@ -221,16 +221,20 @@
   function scrollStrip( event )
   {
     var strip = $( "#carousel-strip" );
-    var activeIndex = strip.find( ".active" ).index();
     var stripItems = strip.find( "li" );
-    var offset = 0;
+    var activeIndex = strip.find( ".active" ).index();
+    var item = $( stripItems[activeIndex] );
 
-    for ( var index = 0; index < activeIndex; index ++ )
+    var stripLeft = strip.scrollLeft();
+    var stripRight = stripLeft + strip.width();
+    var itemLeft = item.position().left;
+    var itemRight = itemLeft + item.width();
+
+    // If strip item is out of view, change the scroll position
+    if ( ( event.target == window ) || ( itemLeft < stripLeft ) || ( itemRight > stripRight ) )
     {
-      offset += $( stripItems[index] ).width();
+      strip.scrollLeft( stripLeft + itemLeft );
     }
-
-    strip.scrollLeft( offset );
   }
 
   // Generate carousel

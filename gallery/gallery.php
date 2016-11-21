@@ -22,9 +22,9 @@
 
   .image
   {
-    position:relative;
-    overflow:hidden;
-    padding-bottom:100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
   }
 
   .image img
@@ -166,7 +166,7 @@
               </div>
 
               <!-- Indicators -->
-              <ol class='carousel-indicators'>
+              <ol id="carousel-strip" class="carousel-indicators" >
               </ol>
 
             </div>
@@ -179,8 +179,15 @@
 
 <script>
 
+  // Bind event to show modal dialog
   $( "#galleryModal" ).on( "show.bs.modal", showModal );
 
+  // Bind events to automatically scroll carousel strip
+  $( "#galleryModal" ).on( "shown.bs.modal", scrollStrip );
+  $( "#galleryCarousel" ).on( "slid.bs.carousel" , scrollStrip );
+  $( window ).resize( scrollStrip );
+
+  // Event handler to show modal dialog
   function showModal( event )
   {
     // Get list of image source files
@@ -205,11 +212,31 @@
       .append( makeCarouselInner( attrs, activeIndex ) );
 
     // Generate carousel indicator content
-    $( this ).find( ".carousel-indicators" )
+    $( "#carousel-strip" )
       .html( "" )
       .append( makeCarouselIndicators( attrs, activeIndex ) );
   }
 
+  // Event handler to auto-scroll carousel strip
+  function scrollStrip( event )
+  {
+    var strip = $( "#carousel-strip" );
+    var activeIndex = strip.find( ".active" ).index();
+
+    var stripItems = strip.find( "li" );
+
+    
+    var offset = 0;
+    for ( var index = 0; index < activeIndex; index ++ )
+    {
+      offset += $( stripItems[index] ).width();
+    }
+
+    strip.scrollLeft( offset );
+
+  }
+
+  // Generate carousel
   function makeCarouselInner( attrs, activeIndex )
   {
     var sContent = "";
@@ -224,6 +251,7 @@
     return sContent;
   }
 
+  // Generate carousel strip
   function makeCarouselIndicators( attrs, activeIndex )
   {
     var sContent = "";

@@ -16,7 +16,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg12">
       <div class="videoHeading">
         <h3><b>Nikhil Navkal</b> as Gennaro in <i>Lucrezia Borgia</i></h3>
-        <h4 class="lato">Ciel, che veggio?... Di pescatore ignobile</h4>
+        <h4 class="lato">Ciel! Che vegg'io? ... Di pescatore ignobile</h4>
       </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg12">

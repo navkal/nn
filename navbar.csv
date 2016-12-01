@@ -1,11 +1,10 @@
 Nikhil Navkal
 &copy; 2016 Nikhil Navkal. All rights reserved.
 NikhilNavkalContact@gmail.com
-home,Home,home/home.php
+about,About,about/about.php
 acclaim,Acclaim,acclaim/acclaim.php
 gallery,Gallery,gallery/gallery.php
 stage,Stage,stage/stage.php
 resume,Resume,resume/resume.php
 contact,Contact,contact/contact.php
-about,About,about/about.php,NAVBAR_TEST
 biography,Biography,biography/biography.php,NAVBAR_TEST

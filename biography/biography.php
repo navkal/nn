@@ -1,8 +1,3 @@
-<!-------------------------------------------------- >
-<img src="biography/banner.jpg" class="img-responsive" style="margin:auto; width:100%; max-width:1300px" alt="Nikhil Navkal">
-<br/>
-<!-------------------------------------------------->
-
 <div class="container">
   <div class="row">
 
@@ -24,7 +19,7 @@
         <p>
           As a child, I had access to a large collection of classical music recordings, both Indian and Western.
           I spent long hours listening to many beloved instrumental and vocal masterpieces.
-          Handel’s Messiah was my favorite above all.
+          Handel’s Messiah was by far my favorite.
           By singing along with the recording, I memorized the text and began to develop my sense of phrasing and vibrato.
         </p>
 
@@ -64,8 +59,15 @@
         <p>
           After college, I moved to New York City, enrolling in graduate school at Mannes College.
           After earning a Master’s degree from Mannes, I enrolled in the opera program at the Yale School of Music, where I completed a second Master’s degree.
+        </p>
+
+        <p>
           At Yale, I performed my first lead roles in full opera productions: Don Ramiro in <i>La Cenerentola</i>, and Tebaldo in <i>I Capuleti e I Montecchi</i>.
           During my graduate school years, I spent summers at various programs for young artists and emerging professionals, including International Vocal Arts Institute (IVAI), Central City Opera, and Festival d'Aix-en-Provence in France, where I portrayed Dorvil in <i>La Scala di Seta</i>.
+        </p>
+
+        <p>
+          In 2014, I received an Encouragement Award in the Metropolitan Opera National Council auditions, New York District.
         </p>
 
         <h4>
@@ -78,18 +80,14 @@
         </p>
 
         <p>
-          One year later, I had the privilege to perform with Opera Australia, in the Sydney Opera House, as Nadir in Bizet’s <i>Les pêcheurs de perles</i>.
-        </p>
-
-        <p>
-          WHEN WAS THE MET COMPETITION?
-        </p>
-
-        <p>
           After attending my performance with LoftOpera, Bruce Zemsky and Alan Green of
           <a href="http://zemskygreenartists.com/contact-us-2/" target="_blank" >Zemsky Green Artists Management</a>
           generously offered me a place on their roster.
           I am honored to be working with them.
+        </p>
+
+        <p>
+          In early 2016, I had the privilege to perform with Opera Australia, in the Sydney Opera House, as Nadir in Bizet’s <i>Les pêcheurs de perles</i>.
         </p>
 
       </div>

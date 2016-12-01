@@ -67,7 +67,9 @@
         </p>
 
         <p>
-          In 2014, I received an Encouragement Award in the Metropolitan Opera National Council auditions, New York District.
+          As a regular customer at the farmers' market in New Haven, I got acquainted with an organic farmer who invited me to visit his farm in western Connecticut.
+          The farm is still one of my favorite escapes from Manhattan.
+          I always relish the chance to get my hands dirty - and sometimes even operate the tractor!
         </p>
 
         <h4>
@@ -75,14 +77,18 @@
         </h4>
 
         <p>
-          Returning to New York City after graduation, I joined former Mannes colleagues in LoftOpera, a young, innovative troupe based in Brooklyn.
+          Following my graduation from Yale in 2014, I received an Encouragement Award in the Metropolitan Opera National Council auditions, New York District.
+        </p>
+
+        <p>
+          Returning to New York City to live, I joined former Mannes colleagues in LoftOpera, a young, innovative troupe based in Brooklyn.
           There, in April 2015, I performed the role of Gennaro in <i>Lucrezia Borgia</i>, for which I earned high praise in the New York Times and several other publications.
         </p>
 
         <p>
-          After attending my performance with LoftOpera, Bruce Zemsky and Alan Green of
-          <a href="http://zemskygreenartists.com/contact-us-2/" target="_blank" >Zemsky Green Artists Management</a>
-          generously offered me a place on their roster.
+          At my final LoftOpera performance, I was very fortunate to have in attendance Bruce Zemsky and Alan Green of
+          <a href="http://zemskygreenartists.com/contact-us-2/" target="_blank" >Zemsky Green Artists Management</a>.
+          After hearing me sing, they generously offered me a place on their roster.
           I am honored to be working with them.
         </p>
 

@@ -4,10 +4,10 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     </div>
 
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-8">
       <div class="lato">
         <p>
           American tenor Nikhil Navkal combines a vibrant singing voice with rare musical intelligence and an authentic stage presence.
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
+    <div class="col-xs-12 col-sm-1 col-md-1 col-lg-2">
     </div>
 
   </div>

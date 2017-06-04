@@ -2,7 +2,7 @@
 
 <div class="container">
 
-  <div style="padding-bottom: 30px;" >
+  <div style="padding-bottom:30px; display:none" >
     <p class="h2"><b>Management</b></p>
     <a href="http://zemskygreenartists.com/contact-us/" target="_blank" >
       <img src="contact/zg.png" alt="Zemsky Green Artists Management">
@@ -11,8 +11,9 @@
 
   <?php
     require_once $_SERVER["DOCUMENT_ROOT"]."/../common/contact.php";
-    $zemskygreen = "#607765";
-    contact( "h2", "Nikhil&nbsp;Navkal", "I", "Nikhil", "white", $zemskygreen, "contact/clef.jpg" );
+    $hoverColor = "#607765"; // Matches Zemsky-Green logo
+    $hoverColor = "#990000"; // Matches treble clef in brand image
+    contact( "h2", "Nikhil&nbsp;Navkal", "I", "Nikhil", "white", $hoverColor, "contact/clef.jpg" );
   ?>
 
 </div>
